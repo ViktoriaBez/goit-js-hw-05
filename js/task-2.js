@@ -1,5 +1,6 @@
-
-
+const getUsersWithFriend = (users, friendName) => {
+    return users.filter(user => user.friends.includes(friendName));
+};
 
 const allUsers = [
     {
@@ -31,8 +32,9 @@ const allUsers = [
       friends: ["Goldie Gentry", "Briana Decker"]
     }
   ];
-  
-  console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
+
+
+console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
   // [
   //   {
   //     name: "Sharlene Bush",
